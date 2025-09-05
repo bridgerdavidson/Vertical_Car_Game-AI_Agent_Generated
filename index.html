@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vertical Car Runner</title>
+  <!-- This game uses a custom Canvas implementation and does not rely on external
+       frameworks like Phaser. Removing external CDN dependencies makes the game
+       self‑contained and simplifies offline development. -->
+  <style>
+    /* Remove default margin/padding so the canvas fills the screen */
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #222;
+      font-family: sans-serif;
+    }
+    /* Position the game canvas in the center */
+    #game-container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-container"></div>
+  <!-- Game script -->
+  <script src="game.js"></script>
+</body>
+</html>
